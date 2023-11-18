@@ -37,10 +37,10 @@ async (req: Request, res: Response) => {
     await user.save();
 
     const userJwt = jwt.sign({ 
-        id: user.id,
-        email: user.email
-    }, 'mykey');
- 
+            id: user.id,
+            email: user.email
+        }, process.env.JWT_KEY!);
+
     req.session = {
         jwt : userJwt
     };
