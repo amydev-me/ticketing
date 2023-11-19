@@ -6,7 +6,6 @@ let mongo: any;
 
 beforeAll(async () => {
     process.env.JWT_KEY = 'mykey';
-    process.env.NODE_ENV = 'test';
 
     mongo = await  MongoMemoryServer.create();
     const mongoUri = await mongo.getUri();
