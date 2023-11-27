@@ -1,11 +1,10 @@
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import jwt from 'jsonwebtoken';
+import { BadRequestError, validationRequest } from '@amytickets/common';
 
 import { User } from '../models/user';
-import { BadRequestError } from '../errors/bad-request-error';
-import { validationRequest } from '../middlewares/validate-requests';
-
+ 
 const router = express.Router();
 
 router.post('/api/users/signup', [ 
