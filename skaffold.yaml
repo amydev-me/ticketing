@@ -20,9 +20,19 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
+    - image: amypyaephyonaing/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
 manifests:
   rawYaml:
     - infra/k8s/auth-depl.yaml
     - infra/k8s/ingress-srv.yaml
     - infra/k8s/auth-mongo-depl.yaml
+    - infra/k8s/ticket-mongo-depl.yaml
     - infra/k8s/client-depl.yaml
+    - infra/k8s/ticket-depl.yaml
