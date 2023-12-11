@@ -5,6 +5,11 @@ import 'express-async-errors';
 import cookieSession from 'cookie-session';
 import { errorHandler, NotFoundError, currentUser } from '@amytickets/common';
 
+import { deleteOrderRouter } from './routes/delete';
+import { indexOrderRouter } from './routes';
+import { newOrderRouter } from './routes/new';
+import { showOrderRouter } from './routes/show';
+
 const app = express();
 app.set('trust prox y', true);
 app.use(json());
@@ -16,6 +21,11 @@ app.use(
 ); 
 
 app.use(currentUser); 
+
+app.use(deleteOrderRouter); 
+app.use(indexOrderRouter); 
+app.use(newOrderRouter); 
+app.use(showOrderRouter); 
 
 app.all('*', async () => {
     throw new NotFoundError();
