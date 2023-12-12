@@ -1,13 +1,16 @@
 import mongoose from "mongoose";
 import { OrderStatus } from "@amytickets/common";
 import { TicketDoc } from "./ticket";
+
+export { OrderStatus };
+
 // An interface that describes the properties
 // that are required to create a new Order
 interface OrderAttrs {
     userId: string;
     status: OrderStatus; 
     expiresAt: Date;
-    ticketId: TicketDoc;
+    ticket: TicketDoc;
 }
 
 // An interface that describes the properties
@@ -16,7 +19,7 @@ interface OrderDoc extends mongoose.Document {
     userId: string;
     status: OrderStatus; 
     expiresAt: Date;
-    ticketId: TicketDoc;
+    ticket: TicketDoc;
 }
 
 // An interface that describes the properties
