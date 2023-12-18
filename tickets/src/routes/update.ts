@@ -30,7 +30,8 @@ router.put('/api/tickets/:id', requireAuth,[
         id: ticket.id,
         title,
         price,
-        userId : ticket.userId
+        userId : ticket.userId,
+        version: ticket.version
     })
     
     res.send(ticket);
