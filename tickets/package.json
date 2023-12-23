@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@amytickets/common": "^1.0.17",
+    "@amytickets/common": "^1.0.21",
     "@types/cookie-session": "^2.0.47",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.5",
