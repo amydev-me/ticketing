@@ -8,12 +8,12 @@ spec:
       http:
         paths: 
           - pathType: ImplementationSpecific
-              path: /api/payments
-              backend:
-                service:
-                  name: payments-srv 
-                  port: 
-                    number: 3000
+            path: /api/payments
+            backend:
+              service:
+                name: payments-srv 
+                port: 
+                  number: 3000
           - pathType: ImplementationSpecific
             path: /api/users
             backend:
