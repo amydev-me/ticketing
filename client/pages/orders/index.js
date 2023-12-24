@@ -1,6 +1,5 @@
-import userRequest from "../../hooks/user-request";
 
-const OrderIndex = (orders) => { 
+const OrderIndex = ({ orders }) => { 
     return (
         <ul>
             {
