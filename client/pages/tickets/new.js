@@ -36,11 +36,11 @@ const NewTicket = () => {
             <h1>Create a Ticket</h1>
             <form onSubmit={ onSubmit }>
                 <div className="form-group">
-                    <lable>Title</lable>
+                    <label>Title</label>
                     <input value={ title } onChange={(e) => setTitle(e.target.value)} className="form-control"/>
                 </div>
                 <div className="form-group">
-                    <lable>Price</lable>
+                    <label>Price</label>
                     <input 
                         value={ price } 
                         onBlur={ onBlur }
