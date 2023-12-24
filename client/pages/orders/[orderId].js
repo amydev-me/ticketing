@@ -27,7 +27,7 @@ const OrderShow = ({ order, currentUser }) => {
             clearInterval(timerId);
         };                          
     }, [order]);
-    console.log(order)
+    
 
     if (timeLeft < 0) {
         return <div>Order Expired</div>;
