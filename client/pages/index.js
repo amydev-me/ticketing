@@ -32,8 +32,7 @@ const LandingPage = ({ currentUser, tickets }) => {
                 </tbody>
             </table>
         </div>
-    )
-    // return currentUser ? <h1>You are signed in</h1> : <h1>You aren not signed in</h1>
+    );
 }
 
 LandingPage.getInitialProps = async (context, client, currentUser) => {
