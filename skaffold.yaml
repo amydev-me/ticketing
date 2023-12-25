@@ -54,8 +54,8 @@ build:
             dest: .
 manifests:
   rawYaml:
+    - infra/k8s/k8s-dev/ingress-srv.yaml
     - infra/k8s/auth-depl.yaml
-    - infra/k8s/ingress-srv.yaml
     - infra/k8s/expiration-redis-depl.yaml
     - infra/k8s/auth-mongo-depl.yaml
     - infra/k8s/ticket-mongo-depl.yaml
