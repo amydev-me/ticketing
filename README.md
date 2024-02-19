@@ -1,4 +1,4 @@
-Ticketing Microservices App
+Ticketing Event Driven Microservices App
 
 
 Tech : Typescript, Nodejs,  ReactJs, Testing, GithubActions(CI/CD), Docker, K8s, GCP
